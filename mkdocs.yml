@@ -1,0 +1,56 @@
+site_name: CryptoFuzz
+site_author: 'Pymmdrza@gmail.com'
+repo_url: 'https://github.com/CryptoFuzzPy/cryptofuzz/'
+edit_uri: '/docs'
+site_description: 'cryptoFuzz a fast and easy Python package for generating private keys and mnemonics, converting seeds, binary, and decimals.'
+site_url: 'https://cryptofuzz.readthedocs.io/'
+copyright: 'Copyright © 2023, Pymmdrza'
+
+nav:
+    - Home: index.md
+    - Use in Windows: '#windows'
+    - Use in Linux/Mac: '#linux--mac'
+    - Git: '#git'
+    - document: 'https://github.com/CryptoFuzzPy/cryptofuzz/'
+    - Bug Tracking: 'https://github.com/CryptoFuzzPy/cryptofuzz/issues'
+    - Pull Requests: 'https://github.com/CryptoFuzzPy/cryptofuzz/pulls'
+    - Source: 'https://github.com/CryptoFuzzPy/cryptofuzz/'
+    - Example: 'https://github.com/CryptoFuzzPy/cryptofuzz/tree/main/Example'
+    - From Private Key: 'https://github.com/CryptoFuzzPy/cryptofuzz/blob/main/Example/from_PrivateKey.py'
+    - From Mnemonic: 'https://github.com/CryptoFuzzPy/cryptofuzz/blob/main/Example/from_Mnemonic.py'
+    - From Decimal: 'https://github.com/CryptoFuzzPy/cryptofuzz/blob/main/Example/from_Decimal.py'
+    - From Wif: 'https://github.com/CryptoFuzzPy/cryptofuzz/blob/main/Example/from_WIF.py'
+    - Mmdrza.Com: 'https://mmdrza.com'
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+  links:
+    not_found: warn
+    absolute_links: info
+    unrecognized_links: info
+theme:
+  name: readthedocs
+  locale: en
+  collapse_by_default: false
+  include_homepage_in_sidebar: true
+  features:
+    - navigation.tabs
+    - navigation.instant
+
+plugins:
+  - search:
+      indexing: 'full'
+
+markdown_extensions:
+  - smarty
+  - toc:
+      permalink: true
+      separator: "-"
+  - sane_lists
+
+exclude_docs:
+  install.sh
+  install.bat
+  *.py
